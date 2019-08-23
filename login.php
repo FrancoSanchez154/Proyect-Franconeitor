@@ -1,19 +1,30 @@
-<!DOCTYPE html>
+<?php
+	session_start();
+
+	//conexion a la BASE
+	mysql_connect ("localhost", "root","15709595hola");
+	mysql_select_db ("cuentas_registradas");
+
+	//buscar en los registros Y COMPARARRAARAR
+	$sql="SELECT * FROM cuentas WHERE usuario_name='". $_POST ['usuario']."' AND usuario_clave='". $_POST['password']."' ";
+	$res=mysql_query($sql);
+	$num=mysql_num_rows($res);
+
+	if($num=0)
+	{
+		$row=mysql_fetch_array($res);
+		 
+		$_SESSION['osu_id']=$row['id_usuario'];
+	}
+?>
+
+
+
+
 <html>
+
+<html img=es>
 <head>
-	<title>Gestor de usuarios</title>
-</head>
-<body>
+	<meta 
 
-<h1>Inicio de Sesion</h1>
-
-	<h3>Coloque los datos solicitados!!</h3>
-
-	<form method="post" action="validar_usuario.php" id="alta">
-		<p>Nombre</p>
-		<p><input type="text" name="nombre" id="nombre"></p>
-		<p>Clave</p>
-		<p><input type="password" name="clave" id="clave"></p>
-
-		<p><button type="submit">Enviar</button></p>
-	</form>
+</html>
