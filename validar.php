@@ -17,6 +17,6 @@ if($array['contar']>0){
     $_SESSION['autenticado'] = 'si';
     header("location: home.php");
 }else{
-  echo "datos incorrectos";
+  echo ("datos incorrectos");
 }
   ?>

@@ -57,11 +57,11 @@ session_start();
 
 					<div class="w-full text-center p-t-27 p-b-239">
 						<span class="txt1">
-							Forgot
+							Olvidaste
 						</span>
 
 						<a href="#" class="txt2">
-							User name / password?
+							Nombre de usuario / Contraseña?
 						</a>
 					</div>
 				</form>
