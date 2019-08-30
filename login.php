@@ -89,6 +89,9 @@ session_start();
 			minimumResultsForSearch: 20,
 			dropdownParent: $('#dropDownSelect1')
 		});
+		//function borrar{
+		//	document.getElementById('usuario').value="";
+		//}
 	</script>
 <!--===============================================================================================-->
 	<script src="vendor/daterangepicker/moment.min.js"></script>

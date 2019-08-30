@@ -17,6 +17,9 @@ if($array['contar']>0){
     $_SESSION['autenticado'] = 'si';
     header("location: home.php");
 }else{
-  echo ("datos incorrectos");
+  //te manda a la misma pagina (ESTO SE PUEDE MEJORAR)
+  echo '<script language="javascript">alert("Error de autentificacion");window.location.href="login.php"</script>';
+
+  //[Te manda a una paginca que dice eso --->] echo ("datos incorrectos");
 }
   ?>
