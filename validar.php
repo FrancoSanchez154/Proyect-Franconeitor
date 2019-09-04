@@ -13,9 +13,11 @@ $consulta = mysqli_query($con, $query);
 $array = mysqli_fetch_array($consulta);
 
 if($array['contar']>0){
+  $_SESSION["autenticado"]= "SI";
+header ("Location: home.php");
   
-    $_SESSION['autenticado'] = 'si';
-    header("location: home.php");
+//    $_SESSION['autenticado'] = 'si';
+//    header("location: home.php");
 }else{
   //te manda a la misma pagina (ESTO SE PUEDE MEJORAR)
   echo '<script language="javascript">alert("Error de autentificacion");window.location.href="login.php"</script>';
