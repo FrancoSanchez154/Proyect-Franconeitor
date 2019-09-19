@@ -32,10 +32,6 @@ session_start();
         		<img src="images/template4.jpg">
         	</div>
 
-
-
-
-
         </div>
 
         <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
