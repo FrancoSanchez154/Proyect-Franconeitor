@@ -1,14 +1,31 @@
-body {
-     background-color: lightblue;
+body{
+	overflow:hidden; 
+	background-color: green;
 }
 
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-  }
-  
-  img {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-  }
+#templates{
+	position: absolute;
+	 top: 1000px;
+	  opacity: 0; 
+	  margin: 0 auto;
+}
+#primera img{
+	border-radius: 50%;
+	 width="150px" ;
+	 height="150px";
+}
+#tercera img{
+	border-radius: 50%;
+	 width="150px" ;
+	 height="150px";
+}
+#cuarta img{
+	border-radius: 50%;
+	 width="150px" ;
+	 height="150px";
+}
+#segunda img{
+	border-radius: 50%;
+	 width="150px" ;
+	 height="150px";
+}
