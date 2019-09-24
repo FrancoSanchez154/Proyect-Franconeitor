@@ -24,10 +24,10 @@ session_start();
         <!-- </div> -->
 
         <div id="templates">
-            <div id="primera">
+            <div id="primera" name="imagenes">
                 <img src="images/template1.jpg">
             </div>
-            <div id="segunda">
+         <!--    <div id="segunda" name="video">
                 <img src="images/template2.png">
             </div>
             <div id="tercera">
@@ -35,9 +35,10 @@ session_start();
             </div>
             <div id="cuarta">
                 <img src="images/template4.jpg">
-            </div>
+            </div> -->
 
         </div>
+
         <div id="contenido"></div>
 
         <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
@@ -61,16 +62,15 @@ session_start();
             // Aca dentro esta cuando apretar el boton y te aparecen los diseños
         </script>
         <script type="text/javascript">
+            $("#contenido").hide()  
         	$(document).ready(function(){
         		$('#primera').on("click", function(){
         			$('#contenido').load('opcion1.php #opcion1');
-         			$('#contenido').animate({
-        				opacity: 1
-        			}, 1500);
+         			$('#contenido').fadeIn();
 
-        			$('#templates').animate({
+        			/*$('#templates').animate({
         				opacity: 0.5
-        			}, 1000);
+        			}, 1000);*/
         		});
         	});
 

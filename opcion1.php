@@ -1,17 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 
-<div id="opcion1">
+</head>
+<body>
+	<div class="preview" id="opcion1">
+		<form name="publicaciones" method="POST" action="validarpublicaciones.php" enctype="multipart/form-data">
+			<label> TITULO</label>
+			<input type="text" name="titulo" required>
+			<br />
+			<label>Seleccione las imagenes</label>
+			<input type="file" name="imagen" required>
+			<br />
+			<input type="submit" name="publicar" value="publicar">
 
-<h1>la puta madre mostra esto</h1>
-</div>
-<div id="opcion2">
 
-<h1>22222222222</h1>
-</div>
-<div id="opcion3">
+		</form>
 
-<h1>333333333333333333333</h1>
-</div>
-<div id="opcion4">
 
-<h1>444444444444</h1>
-</div>
+
+
+	</div>
+
+</body>
+</html>
