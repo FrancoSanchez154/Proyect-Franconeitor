@@ -7,7 +7,6 @@ session_start();
     <html>
 
     <head>
-
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
     </head>
@@ -36,8 +35,8 @@ session_start();
             <div id="cuarta">
                 <img src="images/template4.jpg">
             </div> -->
-
-        </div>
+     
+   </div>
 
         <div id="contenido"></div>
 

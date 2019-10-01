@@ -1,5 +1,6 @@
 <?php 
 include 'conexion.php';
+session_start();
 
 $titulo=$_REQUEST['titulo'];
 $num_pag=$_REQUEST['num_pag'];
@@ -24,6 +25,8 @@ $consulta = mysqli_query($con, $query);//ERA ESTOOOOO <--------------------
 
 if ($query) {
 	echo"instertado piola";
+	header ("Location: prube.php?titulo_post=".$titulo."");
+	exit();
 }
 else{
 	echo "no funcionao";
@@ -32,4 +35,4 @@ else{
 
 
 
- ?>
+ ?><

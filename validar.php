@@ -15,6 +15,8 @@ $array = mysqli_fetch_array($consulta);
 if($array['contar']>0){
   $_SESSION["autenticado"]= "SI";
 header ("Location: home.php");
+
+
   
 //    $_SESSION['autenticado'] = 'si';
 //    header("location: home.php");
