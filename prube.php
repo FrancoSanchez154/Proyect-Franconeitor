@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
 <?php
 $id_usuario = $_GET['titulo_post'];
 include 'conexion.php';
@@ -13,3 +20,8 @@ while ($fila=mysqli_fetch_array($query)){
 	echo '<img src="'.$fila['imagen_post'].'">';
 
 }
+?>
+
+</body>
+</html>
+

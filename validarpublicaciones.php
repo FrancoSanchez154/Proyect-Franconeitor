@@ -25,7 +25,7 @@ $consulta = mysqli_query($con, $query);//ERA ESTOOOOO <--------------------
 
 if ($query) {
 	echo"instertado piola";
-	header ("Location: prube.php?titulo_post=".$titulo."");
+	header ("Location: prube2.php?titulo_post=".$titulo."");
 	exit();
 }
 else{
