@@ -13,7 +13,7 @@ session_start();
 
     <body>
 
-        <button class="boton_personalizado" type="submit"  id="comenzar">COMENZAR</button>
+        <button class="boton_personalizado" type="submit" id="comenzar">COMENZAR</button>
 
         <!-- <center><input type="button" id="comenzar" value="Comenzar" style="text-align:center;background-color: coral ;font-style: italic ;font-size:30px ; height: 50px;width: 150px">
     	</center> -->
@@ -26,7 +26,7 @@ session_start();
             <div id="primera" name="imagenes">
                 <img src="images/template1.jpg">
             </div>
-         <!--    <div id="segunda" name="video">
+            <!--    <div id="segunda" name="video">
                 <img src="images/template2.png">
             </div>
             <div id="tercera">
@@ -35,8 +35,8 @@ session_start();
             <div id="cuarta">
                 <img src="images/template4.jpg">
             </div> -->
-     
-   </div>
+
+        </div>
 
         <div id="contenido"></div>
 
@@ -46,7 +46,7 @@ session_start();
             $(document).ready(function() {
                 $('#comenzar').on("click", function() {
                     // $('#front').animate({
-                        // opacity: 0,
+                    // opacity: 0,
                     // }, 1000);
                     $('#templates').animate({
                         top: 40,
@@ -61,18 +61,17 @@ session_start();
             // Aca dentro esta cuando apretar el boton y te aparecen los diseños
         </script>
         <script type="text/javascript">
-            $("#contenido").hide()  
-        	$(document).ready(function(){
-        		$('#primera').on("click", function(){
-        			$('#contenido').load('opcion1.php #opcion1');
-         			$('#contenido').fadeIn();
+            $("#contenido").hide()
+            $(document).ready(function() {
+                $('#primera').on("click", function() {
+                    $('#contenido').load('crearpost.php #crearpost');
+                    $('#contenido').fadeIn();
 
-        			/*$('#templates').animate({
-        				opacity: 0.5
-        			}, 1000);*/
-        		});
-        	});
-
+                    /*$('#templates').animate({
+                    	opacity: 0.5
+                    }, 1000);*/
+                });
+            });
         </script>
 
     </body>

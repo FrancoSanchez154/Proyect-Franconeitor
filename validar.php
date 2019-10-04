@@ -1,6 +1,6 @@
 <?php
  require 'conexion.php';
- 
+
 session_start();
 
 $user = $_POST['usuario'];
@@ -16,14 +16,8 @@ if($array['contar']>0){
   $_SESSION["autenticado"]= "SI";
 header ("Location: home.php");
 
-
-  
-//    $_SESSION['autenticado'] = 'si';
-//    header("location: home.php");
 }else{
   //te manda a la misma pagina (ESTO SE PUEDE MEJORAR)
   echo '<script language="javascript">alert("Error de autentificacion");window.location.href="login.php"</script>';
-
-  //[Te manda a una paginca que dice eso --->] echo ("datos incorrectos");
 }
   ?>

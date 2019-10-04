@@ -8,7 +8,9 @@
 
 <body>
     <h1>Publicaciones por dios</h1>
-
+    <!------------ BOTONCITO PARA QE ME MANDE AL LOGIN ------------->
+    <input type="submit" value="Crear publicacion" onclick="location='login.php'" />
+    <!--  -->
     <?php
     include 'conexion.php';
     if (isset($_GET['pagina'])){
@@ -18,7 +20,8 @@
     }
     $tx="SELECT * FROM post limit 0,10";//numero de publicaciones por pag
     $query= mysqli_query ($con, $tx);
-
+// ACA TE MUESTRA LOS DATOS DE LA BASE
+// TODOS EN UN DIV!!
 		while($data=mysqli_fetch_array($query)){
         echo '<div class="post">';
         echo "<br>";
@@ -46,7 +49,7 @@
 	$cantidad_paginas=floor($total/10); //numero de publicaciones por pag
 	$i=1;
 		while($i<=$cantidad_paginas){
-			echo '<a href="prube2.php?pagina='.$i.'">'.$i.'</a>     ';
+			echo '<a href="index.php?pagina='.$i.'">'.$i.'</a>     ';
 			$i++;
 		}
 ?>

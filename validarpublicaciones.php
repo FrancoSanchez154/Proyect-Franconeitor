@@ -10,8 +10,6 @@ $editorial=$_REQUEST['editorial'];
 $reseña=$_REQUEST['reseña'];
 $fecha_publicacion=$_REQUEST['fecha_publicacion'];
 
-
-
 $nombreimg=$_FILES['imagen']['name'];
 $archivo=$_FILES['imagen']['tmp_name'];
 $ruta="images";
@@ -25,14 +23,10 @@ $consulta = mysqli_query($con, $query);//ERA ESTOOOOO <--------------------
 
 if ($query) {
 	echo"instertado piola";
-	header ("Location: prube2.php?titulo_post=".$titulo."");
+	header ("Location: index.php?titulo_post=".$titulo."");
 	exit();
 }
 else{
 	echo "no funcionao";
-
 }
-
-
-
- ?><
+ ?>
