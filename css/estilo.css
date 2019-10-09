@@ -1,20 +1,8 @@
-/*body{
-	background-image: url("images/fondo.jpg");
-	background-color: #cccccc;
-	background-repeat: no-repeat;
-
-}
-*/
-.post{
-
-}
 img#imgpost{
 	width: 150px;
 	height: 150px;
 }
-.preview{
 
-}
 .boton_personalizado{
 	
     text-decoration: none;
@@ -45,22 +33,7 @@ img#imgpost{
 	width: 150px;
 	height: 150px;
 }
-/*}
-#segunda img{
-	border-radius: 50%;
-	 width:150px;
-	 height:150px;
-}
-#tercera img{
-	border-radius: 50%;
-	 width:150px;
-	 height:150px;
-}
-#cuarta img{
-	border-radius: 50%;
-	 width:150px;
-	 height:150px;
-}*/
+
 #contenido{
 		position: fixed;
 		padding-top: : 50%;
@@ -68,8 +41,5 @@ img#imgpost{
 		width: 100%;
 		height: 100%;
 		background-color: rgba(255,255,255,0.5)
-		/*opacity: 0;*/ 
-
-
 }
 
