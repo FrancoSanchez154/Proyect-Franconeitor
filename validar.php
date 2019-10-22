@@ -14,7 +14,8 @@ $array = mysqli_fetch_array($consulta);
 
 if($array['contar']>0){
   $_SESSION["autenticado"]= "SI";
-header ("Location: home.php");
+// header ("Location: usuario_validar.php");
+  header("Location: home.php");
 
 }else{
   //te manda a la misma pagina (ESTO SE PUEDE MEJORAR)

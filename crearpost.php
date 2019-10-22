@@ -3,11 +3,14 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
+
+
     <div class="preview" id="crearpost">
+        
         <form name="publicaciones" method="POST" action="validarpublicaciones.php" enctype="multipart/form-data">
             <label> TITULO</label>
             <input type="text" autocomplete="off" name="titulo" required>
@@ -44,7 +47,7 @@
         </form>
 
     </div>
-
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

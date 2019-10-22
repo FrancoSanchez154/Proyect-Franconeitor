@@ -1,7 +1,8 @@
 <?php 
-include 'seguridad.php';
+require 'seguridad.php';
 session_start();
  ?>
+ 
 
     <!DOCTYPE html>
     <html>
@@ -11,11 +12,10 @@ session_start();
 
     </head>
 
-    <body>
+    <body class="body_home">
+
 
         <button class="boton_personalizado" type="submit" id="comenzar">COMENZAR</button>
-
-        </div>
 
         <div id="contenido"></div>
 
@@ -27,7 +27,7 @@ session_start();
                 $('#comenzar').on("click", function(){
                     $('#comenzar').animate({
                         opacity: 0
-                    }, 1000);
+                    }, 1000     );
                     $('#comenzar').hide(1);
                 });
             });
@@ -40,7 +40,7 @@ session_start();
                     $('#contenido').fadeIn(1200);
                 });
             });
-        </script>
+        </script>                                                   
 
     </body>
 

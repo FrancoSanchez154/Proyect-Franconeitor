@@ -1,3 +1,17 @@
+<?php
+session_start();
+//COMPRUEBA QUE EL USUARIO ESTA AUTENTICADO
+if ($_SESSION["autenticado"] != "SI") {
+    // no logueado
+$link="login.php";
+}
+else {
+    // si logueado
+    $long="si";
+$link="home.php";
+
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -9,7 +23,7 @@
 <body>
     <h1>Publicaciones por dios</h1>
     <!------------ BOTONCITO PARA QE ME MANDE AL LOGIN ------------->
-    <input type="submit" value="Crear publicacion" onclick="location='login.php'" />
+    <input type="submit" value="Crear publicacion" onclick="location='<?php echo $link; ?>'" />
     <!--  -->
     <?php
     include 'conexion.php';
@@ -52,6 +66,10 @@
 			echo '<a href="index.php?pagina='.$i.'">'.$i.'</a>     ';
 			$i++;
 		}
+
+if ($long=="si") {
+  echo "<a href='salir.php'>Cerrar Session</a>";  
+}
 ?>
 </body>
 

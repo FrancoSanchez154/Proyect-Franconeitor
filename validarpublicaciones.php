@@ -1,5 +1,6 @@
 <?php 
 include 'conexion.php';
+
 session_start();
 
 $titulo=$_REQUEST['titulo'];
@@ -17,7 +18,7 @@ $ruta="images";
 $ruta=$ruta."/".$nombreimg;
 
 move_uploaded_file($archivo, $ruta);
-$query="INSERT INTO post VALUES('', '".$titulo."','".$num_pag."','".$medidas."','".$tapa."','".$editorial."','".$reseña."','".$fecha_publicacion."','".$ruta."') ";
+$query="INSERT INTO post VALUES('','','".$titulo."','".$num_pag."','".$medidas."','".$tapa."','".$editorial."','".$reseña."','".$fecha_publicacion."','".$ruta."') ";
 
 $consulta = mysqli_query($con, $query);//ERA ESTOOOOO <--------------------
 
